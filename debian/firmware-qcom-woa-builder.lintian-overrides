@@ -1,0 +1,2 @@
+# The package generates other packages, so it depends on debhelper
+firmware-qcom-woa-builder: binary-package-depends-on-toolchain-package Depends: debhelper

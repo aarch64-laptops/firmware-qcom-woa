@@ -1,0 +1,15 @@
+Source: firmware-qcom-woa
+Section: contrib/kernel
+Priority: optional
+Maintainer: Dmitry Baryshkov <dbaryshkov@gmail.com>
+Standards-Version: 4.6.2
+Build-Depends: debhelper-compat (= 12)
+
+Package: firmware-qcom-woa-builder
+Architecture: all
+Depends: cabextract, debhelper, ${misc:Depends}
+Description: Build firmware packages for Qualcomm WoA devices
+ This package contains a set of scripts to build Debian packages with binary
+ firmware for one of the following devices:
+ - Lenovo Miix 630
+ - Lenovo Yoga C630

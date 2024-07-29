@@ -1,0 +1,7 @@
+files
+.debhelper
+debhelper-build-stamp
+firmware-qcom-woa-builder/
+
+*.log
+*.substvars
