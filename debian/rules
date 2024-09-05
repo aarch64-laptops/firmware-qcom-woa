@@ -5,7 +5,6 @@
 
 override_dh_auto_install:
 	dh_auto_install
-	for f in \
-		make-lenovo-miix-630-firmware-pkg.sh \
-		make-lenovo-yoga-c630-firmware-pkg.sh \
-		; do install -m 0755 $${f} debian/firmware-qcom-woa-builder/usr/bin/$${f%.sh} ; done
+	for f in make*pkg.sh ; do \
+		install -m 0755 $${f} debian/firmware-qcom-woa-builder/usr/bin/$${f%.sh} ; \
+	done
